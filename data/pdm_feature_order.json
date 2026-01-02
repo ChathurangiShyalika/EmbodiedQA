@@ -1,0 +1,29 @@
+{
+  "features": [
+    "volt_mean",
+    "volt_std",
+    "volt_min",
+    "volt_max",
+    "volt_trend",
+    "rotate_mean",
+    "rotate_std",
+    "rotate_min",
+    "rotate_max",
+    "rotate_trend",
+    "pressure_mean",
+    "pressure_std",
+    "pressure_min",
+    "pressure_max",
+    "pressure_trend",
+    "vibration_mean",
+    "vibration_std",
+    "vibration_min",
+    "vibration_max",
+    "vibration_trend",
+    "error_count_last_window",
+    "distinct_error_types_last_window",
+    "hours_since_last_maint_comp3",
+    "machine_age",
+    "model_model1"
+  ]
+}

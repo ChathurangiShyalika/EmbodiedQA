@@ -11,8 +11,8 @@ from src.utils.prompt_builder_static import load_qa_index, build_prompt_for_qa
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
 DB_PATH = "data/pdm_episodic_store.db"
-QA_PATH = "data/pdm_qa_cf.jsonl"
-OUT_PATH = "data/pdm_preds_cf.jsonl"
+QA_PATH = "data/pdm_qa_diag_.jsonl"
+OUT_PATH = "data/pdm_preds_diag_.jsonl"
 
 
 def call_llm_and_parse_json(system: str, user: str) -> dict:

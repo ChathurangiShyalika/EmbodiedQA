@@ -1,1 +1,0 @@
-{"qa_id": "pdm_ts_cf_pdm_m56_comp3_2015-01-02T03", "label": "comp3", "task_type": "counterfactual", "structure_ok": true, "provenance_ok": true, "label_consistent": false, "counterfactual_dir_correct": true, "verify_report": {"structure_ok": true, "provenance_ok": true, "structure_issues": [], "provenance_issues": []}}

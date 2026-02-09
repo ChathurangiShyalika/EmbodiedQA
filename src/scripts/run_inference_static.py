@@ -10,9 +10,55 @@ from openai import OpenAI
 # Create a single global client
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
-DB_PATH = "data/episodic_store.db"
-QA_PATH = "data/c_qa.jsonl"
-OUT_PATH = "data/c_preds.jsonl"
+#1. python -m src.scripts.run_inference_full --start 0 --end 5716
+DB_PATH = "data/outputs/pdm/pdm_episodic_store.db"
+QA_PATH = "data/outputs/pdm/pdm_qas_diagnostic.jsonl"
+OUT_PATH = "data/outputs/pdm/preds_pdm_qas_diagnostic.jsonl"
+
+#2. python -m src.scripts.run_inference_full --start 0 --end 5716
+DB_PATH = "data/outputs/pdm/pdm_episodic_store.db"
+QA_PATH = "data/outputs/pdm/pdm_qas_temporal.jsonl"
+OUT_PATH = "data/outputs/pdm/preds_pdm_qas_temporal.jsonl"
+
+#3. python -m src.scripts.run_inference_full --start 0 --end 5716
+DB_PATH = "data/outputs/pdm/pdm_episodic_store.db"
+QA_PATH = "data/outputs/pdm/pdm_qas_descriptive.jsonl"
+OUT_PATH = "data/outputs/pdm/preds_pdm_qas_descriptive.jsonl"
+
+#4. python -m src.scripts.run_inference_full --start 0 --end 761
+DB_PATH = "data/outputs/pdm/pdm_episodic_store.db"
+QA_PATH = "data/outputs/pdm/pdm_qa_counterfactual.jsonl"
+OUT_PATH = "data/outputs/pdm/preds_pdm_qa_counterfactual.jsonl"
+
+#5. python -m src.scripts.run_inference_full --start 0 --end 902
+DB_PATH = "data/outputs/pdm/pdm_episodic_store.db"
+QA_PATH = "data/outputs/pdm/pdm_qa_action.jsonl"
+OUT_PATH = "data/outputs/pdm/preds_pdm_qa_action.jsonl"
+
+#6. python -m src.scripts.run_inference_full --start 0 --end 2205
+DB_PATH = "data/outputs/hydraulic/hyd_risk_model.joblib"
+QA_PATH = "data/outputs/hydraulic/hyd_diag_descriptive.jsonl"
+OUT_PATH = "data/outputs/hydraulic/preds_hyd_diag_descriptive.jsonl"
+
+#7. python -m src.scripts.run_inference_full --start 0 --end 2205
+DB_PATH = "data/outputs/hydraulic/hyd_risk_model.joblib"
+QA_PATH = "data/outputs/hydraulic/hyd_diag_diagnostic.jsonl"
+OUT_PATH = "data/outputs/hydraulic/preds_hyd_diag_diagnostic.jsonl"
+
+#8. python -m src.scripts.run_inference_full --start 0 --end 10
+DB_PATH = "data/outputs/hydraulic/hyd_risk_model.joblib"
+QA_PATH = "data/outputs/hydraulic/hyd_qas_temporal_count.jsonl"
+OUT_PATH = "data/outputs/hydraulic/preds_hyd_qas_temporal_count.jsonl"
+
+#9. python -m src.scripts.run_inference_full --start 0 --end 2184
+DB_PATH = "data/outputs/hydraulic/hyd_risk_model.joblib"
+QA_PATH = "data/outputs/hydraulic/hyd_cf.jsonl"
+OUT_PATH = "data/outputs/hydraulic/preds_hyd_cf.jsonl"
+
+#10. python -m src.scripts.run_inference_full --start 0 --end 2205
+DB_PATH = "data/outputs/hydraulic/hyd_risk_model.joblib"
+QA_PATH = "data/outputs/hydraulic/hyd_action.jsonl"
+OUT_PATH = "data/outputs/hydraulic/preds_hyd_action.jsonl"
 
 def call_llm_and_parse_json(system: str, user: str) -> dict:
     """

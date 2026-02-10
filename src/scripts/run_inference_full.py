@@ -9,7 +9,7 @@ from src.utils.episodic_store import EpisodicStore
 from src.utils.prompt_builder_static import load_qa_index, build_prompt_for_qa
 
 # Make sure OPENAI_API_KEY is set in your environment
-client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"),base_url=os.environ.get("base_url"))
+client = OpenAI(api_key=os.environ.get("api_key"), base_url=os.environ.get("base_url"))
 
 #1. python -m src.scripts.run_inference_full --start 0 --end 5716
 DB_PATH = "data/outputs/pdm/pdm_episodic_store.db"
@@ -70,7 +70,7 @@ def call_llm_and_parse_json(system: str, user: str) -> dict:
       direct_answer, reasoning_answer, provenance, confidence
     """
     response = client.chat.completions.create(
-        model="gpt-4.1-mini",
+        model="GCP/claude-4-sonnet",
         messages=[
             {"role": "system", "content": system},
             {"role": "user", "content": user},

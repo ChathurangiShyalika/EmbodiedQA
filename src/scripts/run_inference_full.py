@@ -11,6 +11,7 @@ from src.utils.prompt_builder_static import load_qa_index, build_prompt_for_qa
 # Make sure OPENAI_API_KEY is set in your environment
 client = OpenAI(api_key=os.environ.get("api_key"), base_url=os.environ.get("base_url"))
 
+"""
 #1. python -m src.scripts.run_inference_full --start 0 --end 5716
 DB_PATH = "data/outputs/pdm/pdm_episodic_store.db"
 QA_PATH = "data/outputs/pdm/pdm_qas_diagnostic.jsonl"
@@ -35,32 +36,41 @@ OUT_PATH = "data/outputs/pdm/preds_pdm_qa_counterfactual.jsonl"
 DB_PATH = "data/outputs/pdm/pdm_episodic_store.db"
 QA_PATH = "data/outputs/pdm/pdm_qa_action.jsonl"
 OUT_PATH = "data/outputs/pdm/preds_pdm_qa_action.jsonl"
+"""
 
+"""
 #6. python -m src.scripts.run_inference_full --start 0 --end 2205
 DB_PATH = "data/outputs/hydraulic/episodic_store_hyd.db"
 QA_PATH = "data/outputs/hydraulic/hyd_diag_descriptive.jsonl"
 OUT_PATH = "data/outputs/hydraulic/preds_hyd_diag_descriptive.jsonl"
+"""
 
+"""
 #7. python -m src.scripts.run_inference_full --start 0 --end 2205
 DB_PATH = "data/outputs/hydraulic/episodic_store_hyd.db"
 QA_PATH = "data/outputs/hydraulic/hyd_diag_diagnostic.jsonl"
 OUT_PATH = "data/outputs/hydraulic/preds_hyd_diag_diagnostic.jsonl"
+"""
 
+"""
 #8. python -m src.scripts.run_inference_full --start 0 --end 10
 DB_PATH = "data/outputs/hydraulic/episodic_store_hyd.db"
 QA_PATH = "data/outputs/hydraulic/hyd_qas_temporal_count.jsonl"
 OUT_PATH = "data/outputs/hydraulic/preds_hyd_qas_temporal_count.jsonl"
+"""
 
+"""
 #9. python -m src.scripts.run_inference_full --start 0 --end 2184
+#Done
 DB_PATH = "data/outputs/hydraulic/episodic_store_hyd.db"
 QA_PATH = "data/outputs/hydraulic/hyd_cf.jsonl"
 OUT_PATH = "data/outputs/hydraulic/preds_hyd_cf.jsonl"
+"""
 
 #10. python -m src.scripts.run_inference_full --start 0 --end 2205
 DB_PATH = "data/outputs/hydraulic/episodic_store_hyd.db"
 QA_PATH = "data/outputs/hydraulic/hyd_action.jsonl"
 OUT_PATH = "data/outputs/hydraulic/preds_hyd_action.jsonl"
-
 
 
 

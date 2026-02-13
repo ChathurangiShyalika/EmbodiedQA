@@ -247,9 +247,9 @@ python -m src.scripts.run_inference_full --start 0 --end 2184
 ---
 
 
-# Add a New Dataset — Full Pipeline (Copy / Paste)
+# Add a New Dataset — Full Pipeline 
 
-This document describes the complete pipeline:
+This section describes the complete pipeline from:
 
 Fact extraction → Episodic DB → QA generation → Prompt inspection → Inference → Evaluation
 

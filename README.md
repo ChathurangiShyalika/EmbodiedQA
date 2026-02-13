@@ -16,7 +16,50 @@ The repository includes:
 - Structured episode datasets  
 
 ---
+## FMEA Knowledge Graph (FMEA-KG)
 
+IndustryAssetEQA ships an ISO-style Failure Mode & Effects Analysis Knowledge Graph (FMEA-KG) used for symbolic grounding, explanation enrichment, and label-normalization in QA prompts.
+
+**What it is**  
+The FMEA-KG is an asset-centric domain graph (constructed with the EMPWR workflow) that encodes asset classes, components, failure modes, sensor abstractions, and maintenance actions. It is used to (a) surface failure-mode metadata and typical indicators in prompts, (b) normalize diagnostic labels across datasets, and (c) verify recommended mitigation actions. :contentReference[oaicite:0]{index=0}
+
+**Key stats (released KG):**
+- ~63 distinct failure modes mapped to 9 asset categories.  
+- ~210 entities and ~1004 relationships (edges like `affects`, `component_of`, `indicated_by`, `mitigated_by`).  
+These counts describe the domain-level graph used across all datasets (not dataset-specific). :contentReference[oaicite:1]{index=1}
+
+**What fields you’ll find on a failure-mode node**
+- canonical failure code / display name  
+- ISO metadata and human-readable description  
+- associated sensors and typical indicators (e.g., `vibration_mean` above baseline)  
+- recommended mitigation / maintenance actions and severity labels. :contentReference[oaicite:2]{index=2}
+
+**Where to get it**  
+The FMEA-KG artifact (export used in our experiments) is released with the paper artifacts: `https://shorturl.at/YXZJ6`. :contentReference[oaicite:3]{index=3}
+
+**Local layout (example)**  
+We include the KG under `data/fmea_kg/` in Turtle and JSON-LD variants:
+
+
+**Minimal Python example (rdflib)**
+```python
+from rdflib import Graph, URIRef
+
+g = Graph()
+g.parse("data/fmea_kg/fmea_kg.ttl", format="turtle")
+
+# find failure modes that affect 'vibration' sensor (example)
+q = """
+PREFIX ex: <http://example.org/fmea#>
+SELECT ?fm ?name WHERE {
+  ?fm ex:associated_sensors ex:vibration .
+  ?fm ex:display_name ?name .
+}
+LIMIT 50
+"""
+for row in g.query(q):
+    print(row)
+```
 ## Quick Start (TL;DR)
 
 1. Install dependencies (recommend a venv).

@@ -21,21 +21,21 @@ The repository includes:
 IndustryAssetEQA ships an ISO-style Failure Mode & Effects Analysis Knowledge Graph (FMEA-KG) used for symbolic grounding, explanation enrichment, and label-normalization in QA prompts.
 
 **What it is**  
-The FMEA-KG is an asset-centric domain graph (constructed with the EMPWR workflow) that encodes asset classes, components, failure modes, sensor abstractions, and maintenance actions. It is used to (a) surface failure-mode metadata and typical indicators in prompts, (b) normalize diagnostic labels across datasets, and (c) verify recommended mitigation actions. :contentReference[oaicite:0]{index=0}
+The FMEA-KG is an asset-centric domain graph (constructed with the EMPWR workflow) that encodes asset classes, components, failure modes, sensor abstractions, and maintenance actions. It is used to (a) surface failure-mode metadata and typical indicators in prompts, (b) normalize diagnostic labels across datasets, and (c) verify recommended mitigation actions. 
 
 **Key stats (released KG):**
 - ~63 distinct failure modes mapped to 9 asset categories.  
 - ~210 entities and ~1004 relationships (edges like `affects`, `component_of`, `indicated_by`, `mitigated_by`).  
-These counts describe the domain-level graph used across all datasets (not dataset-specific). :contentReference[oaicite:1]{index=1}
+These counts describe the domain-level graph used across all datasets (not dataset-specific). 
 
 **What fields you’ll find on a failure-mode node**
 - canonical failure code / display name  
 - ISO metadata and human-readable description  
 - associated sensors and typical indicators (e.g., `vibration_mean` above baseline)  
-- recommended mitigation / maintenance actions and severity labels. :contentReference[oaicite:2]{index=2}
+- recommended mitigation / maintenance actions and severity labels. 
 
 **Where to get it**  
-The FMEA-KG artifact (export used in our experiments) is released with the paper artifacts: `https://shorturl.at/YXZJ6`. :contentReference[oaicite:3]{index=3}
+The FMEA-KG artifact (export used in our experiments) is released with the paper artifacts.
 
 **Local layout (example)**  
 We include the KG under `data/fmea_kg/` in Turtle and JSON-LD variants:

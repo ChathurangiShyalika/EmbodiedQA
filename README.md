@@ -6,13 +6,20 @@ This repository implements **IndustryAssetEQA** — a neurosymbolic embodied QA 
 
 ## IndustryAssetEQA: System Architecture and Key Results
 
-<div align="center" style="display:flex; gap:8px; justify-content:center; flex-wrap:wrap;">
-  <a href="assets/architecture.png">
-    <img src="assets/architecture.png" alt="Architecture" width="560" />
-  </a>
-  <a href="assets/results.png">
-    <img src="assets/results.png" alt="Metrics" width="560" />
-  </a>
+<div align="center" style="display:flex; gap:12px; justify-content:center; align-items:flex-start; flex-wrap:wrap;">
+  <figure style="margin:0; max-width:48%; min-width:280px;">
+    <a href="assets/architecture.png" title="Open full-size architecture">
+      <img src="assets/architecture.png" alt="IndustryAssetEQA architecture diagram" style="width:100%; height:auto; display:block;"/>
+    </a>
+    <figcaption style="text-align:center; font-size:0.9em; margin-top:6px;">Architecture diagram</figcaption>
+  </figure>
+
+  <figure style="margin:0; max-width:48%; min-width:280px;">
+    <a href="assets/Picture1.png" title="Open full-size metrics">
+      <img src="assets/Picture1.png" alt="Evaluation metrics: Struct.OK, Prov.OK, Label Cons., CF Acc., Entail.Pass, Claim Prec." style="width:100%; height:auto; display:block;"/>
+    </a>
+    <figcaption style="text-align:center; font-size:0.9em; margin-top:6px;">Key performance metrics</figcaption>
+  </figure>
 </div>
 
 Compared to LLM-only baselines, IndustryAssetEQA substantially improves structural validity, provenance accuracy, counterfactual reasoning reliability, and reduces unsafe expert-rated overclaims.

@@ -4,13 +4,23 @@
 
 This repository implements **IndustryAssetEQA** — a neurosymbolic embodied QA system that grounds answers in episode-level telemetry, an ISO-derived Failure Mode and Effects Analysis Knowledge Graph (FMEA-KG), and a causal risk simulator to support evidence-grounded, counterfactual, and action-oriented maintenance QA.
 
-## System Architecture
+## IndustryAssetEQA: System Architecture and Key Results
 
-<p align="center">
-  <a href="assets/architecture.png">
-    <img src="assets/architecture.png" alt="IndustryAssetEQA Architecture" width="900"/>
-  </a>
-</p>
+<div align="center" style="display:flex; gap:12px; justify-content:center; align-items:flex-start; flex-wrap:wrap;">
+  <figure style="margin:0; max-width:48%; min-width:280px;">
+    <a href="assets/architecture.png" title="Open full-size architecture">
+      <img src="assets/architecture.png" alt="IndustryAssetEQA architecture diagram" style="width:100%; height:auto; display:block;"/>
+    </a>
+    <figcaption style="text-align:center; font-size:0.9em; margin-top:6px;">Architecture diagram</figcaption>
+  </figure>
+
+  <figure style="margin:0; max-width:48%; min-width:280px;">
+    <a href="assets/Picture1.png" title="Open full-size metrics">
+      <img src="assets/Picture1.png" alt="Evaluation metrics: Struct.OK, Prov.OK, Label Cons., CF Acc., Entail.Pass, Claim Prec." style="width:100%; height:auto; display:block;"/>
+    </a>
+    <figcaption style="text-align:center; font-size:0.9em; margin-top:6px;">Key performance metrics</figcaption>
+  </figure>
+</div>
 
 Compared to LLM-only baselines, IndustryAssetEQA substantially improves structural validity, provenance accuracy, counterfactual reasoning reliability, and reduces unsafe expert-rated overclaims.
 

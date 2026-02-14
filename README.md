@@ -78,6 +78,13 @@ LIMIT 50
 for row in g.query(q):
     print(row)
 ```
+
+<p align="center">
+  <a href="assets/KG.png">
+    <img src="assets/KG.png" alt="A snippet of Failure Mode and Effects Analysis Knowledge Graph (FMEA-KG)" width="900"/>
+  </a>
+</p>
+
 ## Quick Start (TL;DR)
 
 1. Install dependencies (recommend a venv).

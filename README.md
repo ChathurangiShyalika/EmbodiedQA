@@ -454,7 +454,7 @@ Wrote 200 counterfactual QA instances to data/pdm_qa_cf.jsonl
 
 ---
 
-## 5) Inspect Prompts (No LLM Call)
+## 5) Inspect Prompts (No LLM Calls)
 
 Static example:
 

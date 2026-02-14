@@ -4,13 +4,16 @@
 
 This repository implements **IndustryAssetEQA** — a neurosymbolic embodied QA system that grounds answers in episode-level telemetry, an ISO-derived Failure Mode and Effects Analysis Knowledge Graph (FMEA-KG), and a causal risk simulator to support evidence-grounded, counterfactual, and action-oriented maintenance QA.
 
-## System Architecture
+## IndustryAssetEQA: System Architecture and Key Results
 
-<p align="center">
+<div align="center" style="display:flex; gap:8px; justify-content:center; flex-wrap:wrap;">
   <a href="assets/architecture.png">
-    <img src="assets/architecture.png" alt="IndustryAssetEQA Architecture" width="900"/>
+    <img src="assets/architecture.png" alt="Architecture" width="560" />
   </a>
-</p>
+  <a href="assets/results.png">
+    <img src="assets/results.png" alt="Metrics" width="560" />
+  </a>
+</div>
 
 Compared to LLM-only baselines, IndustryAssetEQA substantially improves structural validity, provenance accuracy, counterfactual reasoning reliability, and reduces unsafe expert-rated overclaims.
 

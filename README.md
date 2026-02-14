@@ -83,7 +83,7 @@ for row in g.query(q):
   <a href="assets/KG.png">
     <img src="assets/KG.png" alt="Industrial Asset Failure Knowledge Graph" style="width:100%; height:auto; display:block;" />
   </a>
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:6px;">Failure Mode and Effects Analysis Knowledge Graph (FMEA-KG)</figcaption>
+    <figcaption style="text-align:center; font-size:0.9em; margin-top:6px;">A snapshot of Failure Mode and Effects Analysis Knowledge Graph (FMEA-KG) showing sensor-asset-failure relationships</figcaption>
 
 </figure>
 

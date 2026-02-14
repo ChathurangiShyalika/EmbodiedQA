@@ -78,6 +78,16 @@ LIMIT 50
 for row in g.query(q):
     print(row)
 ```
+
+<figure align="center" style="max-width:900px; margin: 0 auto;">
+  <a href="assets/KG.png">
+    <img src="assets/KG.png" alt="Industrial Asset Failure Knowledge Graph" style="width:100%; height:auto; display:block;" />
+  </a>
+    <figcaption style="text-align:center; font-size:0.9em; margin-top:6px;">A snapshot of Failure Mode and Effects Analysis Knowledge Graph (FMEA-KG) showing sensor-asset-failure relationships</figcaption>
+
+</figure>
+
+
 ## Quick Start (TL;DR)
 
 1. Install dependencies (recommend a venv).

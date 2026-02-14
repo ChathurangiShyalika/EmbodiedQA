@@ -234,12 +234,12 @@ python -m src.scripts.run_inference_full --disable-kg
 
 ## Datasets
 
-The system supports:
+The system includes episodes for the below datasets stored in the inderlined folders:
 
-- Microsoft Azure Predictive Maintenance (PdM)
-- NASA C-MAPSS turbofan engines
-- Genesis cyber-physical production system
-- Hydraulic systems condition monitoring
+- Microsoft Azure Predictive Maintenance (PdM): `data/outputs/pdm`
+- NASA C-MAPSS turbofan engines: `data/outputs/cmapss`
+- Genesis cyber-physical production system: `data/outputs/genesis`
+- Hydraulic systems condition monitoring: `data/outputs/hydraulic`
 
 Episodes are encoded as structured, time-situated facts with full provenance.
 

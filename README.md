@@ -79,11 +79,14 @@ for row in g.query(q):
     print(row)
 ```
 
-<p align="center">
+<figure align="center" style="max-width:900px; margin: 0 auto;">
   <a href="assets/KG.png">
-    <img src="assets/KG.png" alt="A snippet of Failure Mode and Effects Analysis Knowledge Graph (FMEA-KG)" width="900"/>
+    <img src="assets/KG.png" alt="Industrial Asset Failure Knowledge Graph" style="width:100%; height:auto; display:block;" />
   </a>
-</p>
+    <figcaption style="text-align:center; font-size:0.9em; margin-top:6px;">Failure Mode and Effects Analysis Knowledge Graph (FMEA-KG)</figcaption>
+
+</figure>
+
 
 ## Quick Start (TL;DR)
 

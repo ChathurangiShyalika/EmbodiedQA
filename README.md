@@ -746,7 +746,7 @@ If you use this repository, please cite:
 
 ```
 @inproceedings{industryasseteqa2026,
-  title={IndustryAssetEQA: Neurosymbolic Embodied Question Answering for Industrial Asset Maintenance},
+  title={IndustryAssetEQA: A Neurosymbolic Operational Intelligence System for Embodied Question Answering in Industrial Asset Maintenance},
   author={...},
   year={2026}
 }
